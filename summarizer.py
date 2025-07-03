@@ -3,8 +3,6 @@ import os
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-#"AIzaSyBj78oH36dvf_3Yd_qJGTUDXkKBZAlZaRI"
-
 def summarize_text(text: str, question: str = None) -> str:
     dangerous_words = ["ignore", "forget", "disregard", "act as", "pretend"]
 
